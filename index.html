@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancasila & Era Globalisasi | Proyek UTS RPL ITS Mandala</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Header & Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Identity -->
+                <div class="flex items-center space-x-3">
+                    <div role="img" aria-label="Logo ITS Mandala" class="h-12 w-12 shrink-0 rounded-full border-2 border-amber-400 bg-white text-red-700 shadow flex items-center justify-center">
+                        <i class="fa-solid fa-building-columns text-xl" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-lg leading-tight text-amber-400">ITS MANDALA</div>
+                        <div class="text-xs text-slate-300 font-medium">Prodi Rekayasa Perangkat Lunak</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-1 lg:space-x-2 text-sm font-semibold">
+                    <a href="#home" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Beranda</a>
+                    <a href="#tentang" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Tentang Pancasila</a>
+                    <a href="#teknologi" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Pancasila & Teknologi</a>
+                    <a href="#studikasus" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Studi Kasus</a>
+                    <a href="#refleksi" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Refleksi UTS</a>
+                    <a href="#referensi" class="nav-link px-3 py-2 rounded-md hover:text-amber-400 hover:bg-slate-800 transition">Referensi</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Beranda</a>
+            <a href="#tentang" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Tentang Pancasila</a>
+            <a href="#teknologi" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Pancasila & Teknologi</a>
+            <a href="#studikasus" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Studi Kasus</a>
+            <a href="#refleksi" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Refleksi UTS</a>
+            <a href="#referensi" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800 hover:text-amber-400">Referensi</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- 1. HOME / HEROSECTION -->
+        <section id="home" class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-red-950 text-white py-20 lg:py-28 overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8 text-center md:text-left space-y-6">
+                        <div class="inline-flex items-center space-x-2 bg-red-900/60 border border-red-500/30 text-red-200 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>UTS Pancasila TA 2025/2026</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                            Tantangan & Penerapan Pancasila di <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-400">Era Globalisasi</span>
+                        </h1>
+                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                            Pengembangan Static Website sebagai Media Edukasi Nilai-Nilai Pancasila dalam Praktik Rekayasa Perangkat Lunak dan Etika Dunia Digital.
+                        </p>
+                        
+                        <!-- Metadata Card -->
+                        <div class="bg-slate-800/80 backdrop-blur border border-slate-700/60 rounded-xl p-4 sm:p-5 text-sm text-slate-300 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl shadow-xl">
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-chalkboard-user text-amber-400 text-lg w-5 text-center"></i>
+                                <div>
+                                    <p class="text-xs text-slate-400">Dosen Pengampu:</p>
+                                    <p class="font-semibold text-slate-100">Umi Lailatul Zahro Syai'un, M.Pd.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-users text-amber-400 text-lg w-5 text-center"></i>
+                                <div>
+                                    <p class="text-xs text-slate-400">Program Studi / Kelas:</p>
+                                    <p class="font-semibold text-slate-100">RPL ( 5RA / 5RB )</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-university text-amber-400 text-lg w-5 text-center"></i>
+                                <div>
+                                    <p class="text-xs text-slate-400">Institusi:</p>
+                                    <p class="font-semibold text-slate-100">ITS Mandala Jember</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fa-solid fa-calendar-check text-amber-400 text-lg w-5 text-center"></i>
+                                <div>
+                                    <p class="text-xs text-slate-400">Batas Waktu UTS:</p>
+                                    <p class="font-semibold text-amber-400">28 Oktober 2026 (18:00 WIB)</p>
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2 border-t border-slate-700/60 pt-3">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <i class="fa-solid fa-user-group text-amber-400" aria-hidden="true"></i>
+                                    <p class="font-semibold text-slate-100">Kelompok 5</p>
+                                </div>
+                                <ol class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-xs leading-relaxed">
+                                    <li>1. Muhammad Andre praditya <span class="text-slate-400">(24070027)</span></li>
+                                    <li>4. Baharudin Rosyid Zakaria <span class="text-slate-400">(24070028)</span></li>
+                                    <li>2. Achmad khoironi <span class="text-slate-400">(24070039)</span></li>
+                                    <li>5. M. Kifli mubarok <span class="text-slate-400">(24070021)</span></li>
+                                    <li>3. Rio Rudiansyah <span class="text-slate-400">(24070030)</span></li>
+                                </ol>
+                            </div>
+                        </div>  
+
+                        <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-4">
+                            <a href="#tentang" class="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-red-900/50 transition flex items-center space-x-2">
+                                <span>Mulai Jelajahi</span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                            <a href="#kuis" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-amber-400 border border-amber-400/30 font-semibold rounded-lg transition flex items-center space-x-2">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Kuis Edukasi</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-4 flex justify-center">
+                        <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl bg-gradient-to-tr from-amber-500/20 to-red-600/20 p-4 border border-white/10 shadow-2xl flex items-center justify-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/National_emblem_of_Indonesia_Garuda_Pancasila.svg" alt="Garuda Pancasila" class="w-full h-full object-contain filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] transform hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TENTANG PANCASILA -->
+        <section id="tentang" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-red-600">Landasan Ideologi</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-1">Pancasila Dasar Negara & Ideologi Bangsa</p>
+                    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-4 text-slate-600 text-base">
+                        Pancasila berfungsi sebagai pandangan hidup, fondasi hukum, dan sistem nilai utama bagi bangsa Indonesia. Di tengah arus globalisasi, 5 sila Pancasila menjadi benteng moralitas dan pilar etika modern.
+                    </p>
+                </div>
+
+                <!-- 5 Sila Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Sila 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xl mb-4">1</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Ketuhanan Yang Maha Esa</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Landasan moral, integritas, kejujuran spiritual, serta rasa tanggung jawab kepada Tuhan dalam setiap tindakan dan karya digital.</p>
+                    </div>
+                    <!-- Sila 2 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-lg bg-red-100 text-red-700 flex items-center justify-center font-bold text-xl mb-4">2</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Kemanusiaan yang Adil dan Beradab</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Menghormati martabat manusia, menjaga privasi data, mencegah perundungan, dan menolak diskriminasi algoritma.</p>
+                    </div>
+                    <!-- Sila 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl mb-4">3</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Persatuan Indonesia</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Menjaga keutuhan bangsa di ruang siber, melawan ujaran kebencian, hoaks, serta polarisasi digital yang merusak integrasi sosial.</p>
+                    </div>
+                    <!-- Sila 4 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xl mb-4">4</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Kerakyatan yang Dipimpin...</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Mengedepankan musyawarah, transparansi, serta kebebasan berpendapat yang bertanggung jawab dalam ruang publik digital.</p>
+                    </div>
+                    <!-- Sila 5 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:shadow-xl transition transform hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-xl mb-4">5</div>
+                        <h3 class="font-bold text-slate-900 text-base mb-2">Keadilan Sosial bagi Seluruh...</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Mewujudkan kesetaraan akses teknologi, inklusivitas aplikasi digital, dan pemberantasan kejahatan siber yang merugikan masyarakat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PANCASILA DAN TEKNOLOGI -->
+        <section id="teknologi" class="py-16 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-amber-400">Analisis Rekayasa Perangkat Lunak</h2>
+                    <p class="text-3xl font-extrabold sm:text-4xl mt-1">Pancasila & Era Globalisasi Teknologi</p>
+                    <div class="w-20 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-4 text-slate-300 text-base">
+                        Globalisasi membawa lompatan teknologi seperti Artificial Intelligence, Big Data, dan Cloud Computing. Tanpa kemudi nilai ideologi, teknologi berisiko menjadi ancaman etika.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <!-- Tantangan Pancasila -->
+                    <div class="bg-slate-800/90 border border-red-500/20 rounded-2xl p-6 lg:p-8 flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="p-3 bg-red-500/20 text-red-400 rounded-lg">
+                                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">Tantangan di Era Globalisasi</h3>
+                            </div>
+                            <ul class="space-y-4 text-sm text-slate-300">
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                                    <span><strong>Individualisme & Hedonisme Digital:</strong> Budaya medsos memicu perilaku egosentris, mengikis kebiasaan gotong royong dan kepedulian sosial.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                                    <span><strong>Disinformasi & Hoaks AI:</strong> Penggunaan Deepfake dan bot otomatis memicu perpecahan serta degradasi rasa persatuan bangsa.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                                    <span><strong>Eksploitasi Data Pribadi:</strong> Praktik komersialisasi privasi pengguna tanpa consent yang transparan demi keuntungan finansial semata.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-xmark text-red-400 mt-1"></i>
+                                    <span><strong>Kesenjangan Akses (Digital Divide):</strong> Akses infrastruktur teknologi yang belum merata merugikan masyarakat di daerah terpencil.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Penerapan Nilai Pancasila -->
+                    <div class="bg-slate-800/90 border border-emerald-500/20 rounded-2xl p-6 lg:p-8 flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-6">
+                                <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-lg">
+                                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white">Penerapan dalam Rekayasa Perangkat Lunak</h3>
+                            </div>
+                            <ul class="space-y-4 text-sm text-slate-300">
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                    <span><strong>Ethics-by-Design & Privacy First:</strong> Menjadikan perlindungan data pribadi dan enkripsi keamanan sebagai fitur standar sistem.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                    <span><strong>Algoritma Bebas Bias:</strong> Mengembangkan AI dan sistem pendukung keputusan yang adil tanpa diskriminasi SARA.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                    <span><strong>Inklusivitas & Aksesibilitas (WCAG):</strong> Merancang UI/UX yang dapat diakses oleh semua lapisan masyarakat, termasuk penyandang disabilitas.</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                    <span><strong>Budaya Open Source & Kolaborasi:</strong> Menerapkan semangat Gotong Royong dalam berbagi repositori kode dan pengetahuan digital.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. STUDI KASUS DAN SOLUSI -->
+        <section id="studikasus" class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-red-600">Implementasi Etis</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-1">Studi Kasus Etika Digital & Solusi Pancasila</p>
+                    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-4 text-slate-600 text-base">
+                        Analisis terhadap fenomena permasalahan nyata dalam teknologi informasi beserta penanganan berlandaskan indikator Pancasila.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Studi Kasus 1 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition overflow-hidden flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="inline-block px-3 py-1 bg-red-100 text-red-700 text-xs font-bold rounded-full mb-3">Kasus 1: Keamanan Data</div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Kebocoran Data Pribadi Pengguna Aplikasi</h3>
+                            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                                Sering timbul kasus jual beli database kependudukan atau data pelanggan dari platform digital akibat lemahnya proteksi dan pengabaian hak privasi.
+                            </p>
+                            <div class="border-t border-slate-100 pt-4 space-y-2">
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2">
+                                    <i class="fa-solid fa-scale-balanced text-amber-500"></i>
+                                    <span>Analisis Sila Pancasila:</span>
+                                </div>
+                                <p class="text-xs text-slate-600"><strong>Sila 2 (Kemanusiaan) & Sila 5 (Keadilan):</strong> Pengabaian hak privasi melanggar martabat kemanusiaan dan merugikan hak konstitusional warga negara.</p>
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2 pt-2">
+                                    <i class="fa-solid fa-lightbulb text-emerald-500"></i>
+                                    <span>Solusi Pengembang RPL:</span>
+                                </div>
+                                <p class="text-xs text-slate-600">Menerapkan arsitektur keamanan bertingkat (Zero Trust), enkripsi end-to-end, serta kepatuhan ketat pada UU Perlindungan Data Pribadi (PDP).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Studi Kasus 2 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition overflow-hidden flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-full mb-3">Kasus 2: Perundungan Siber</div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Cyberbullying & Ujaran Kebencian di Medsos</h3>
+                            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                                Tingginya angka perundungan siber di platform media sosial yang berdampak pada gangguan kesehatan mental hingga depresi korban.
+                            </p>
+                            <div class="border-t border-slate-100 pt-4 space-y-2">
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2">
+                                    <i class="fa-solid fa-scale-balanced text-amber-500"></i>
+                                    <span>Analisis Sila Pancasila:</span>
+                                </div>
+                                <p class="text-xs text-slate-600"><strong>Sila 2 (Kemanusiaan) & Sila 3 (Persatuan):</strong> Perilaku perundungan merusak persatuan dan norma kesantunan bangsa Indonesia.</p>
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2 pt-2">
+                                    <i class="fa-solid fa-lightbulb text-emerald-500"></i>
+                                    <span>Solusi Pengembang RPL:</span>
+                                </div>
+                                <p class="text-xs text-slate-600">Merancang mekanisme Moderasi Konten berbasis NLP AI untuk mendeteksi ujaran kebencian serta tombol pelaporan responsif bagi pengguna.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Studi Kasus 3 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition overflow-hidden flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-full mb-3">Kasus 3: Kecerdasan Buatan</div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Penyalahgunaan Generative AI & Hoaks</h3>
+                            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                                Rekayasa video/audio palsu (Deepfake) berbasis AI yang disebarkan untuk memanipulasi opini publik dan manipulasi informasi politik.
+                            </p>
+                            <div class="border-t border-slate-100 pt-4 space-y-2">
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2">
+                                    <i class="fa-solid fa-scale-balanced text-amber-500"></i>
+                                    <span>Analisis Sila Pancasila:</span>
+                                </div>
+                                <p class="text-xs text-slate-600"><strong>Sila 1 (Kejujuran) & Sila 4 (Demokrasi):</strong> Hoaks merusak pilar kejujuran dan mengancam kehidupan demokrasi yang sehat.</p>
+                                <div class="text-xs font-semibold text-slate-800 flex items-center space-x-2 pt-2">
+                                    <i class="fa-solid fa-lightbulb text-emerald-500"></i>
+                                    <span>Solusi Pengembang RPL:</span>
+                                </div>
+                                <p class="text-xs text-slate-600">Menyematkan watermarking/digital signature pada konten AI generatif serta mengembangkan algoritma verifikasi fakta otomatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KUIS INTERAKTIF PANCASILA (FITUR PENDUKUNG WAKTU UTS) -->
+        <section id="kuis" class="py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white border-y border-slate-700">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Fitur Interaktif Interaktif</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold mt-3">Uji Pemahaman: Pancasila & Etika Digital</h2>
+                <p class="text-slate-300 text-xs sm:text-sm mt-2">Jawab pertanyaan singkat berikut untuk menguji pemahaman etika software engineering berbasis Pancasila.</p>
+
+                <div id="quiz-container" class="mt-8 bg-slate-800/90 border border-slate-700 rounded-2xl p-6 text-left shadow-2xl">
+                    <div id="quiz-body">
+                        <div class="flex justify-between items-center text-xs text-amber-400 font-semibold mb-3">
+                            <span id="quiz-progress">Pertanyaan 1 dari 3</span>
+                            <span id="quiz-score-badge" class="bg-slate-700 px-2 py-1 rounded">Skor: 0</span>
+                        </div>
+                        <h3 id="quiz-question" class="text-base sm:text-lg font-bold text-white mb-4">...</h3>
+                        <div id="quiz-options" class="space-y-3">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="hidden text-center py-6">
+                        <i class="fa-solid fa-trophy text-4xl text-amber-400 mb-3"></i>
+                        <h3 class="text-xl font-bold text-white mb-2">Kuis Selesai!</h3>
+                        <p id="quiz-final-score" class="text-base text-slate-300 mb-4">Anda berhasil meraih skor 0 / 30</p>
+                        <button onclick="resetQuiz()" class="px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition">Ulangi Kuis</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFLEKSI UTS (PERTANYAAN REFLEKSI SOAL UTS) -->
+        <section id="refleksi" class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-red-600">Jawaban Soal Lembar UTS</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-1">Jawaban Pertanyaan Refleksi</p>
+                    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-4 text-slate-600 text-base">
+                        Refleksi mendalam sesuai panduan tugas UTS Pancasila Prodi Rekayasa Perangkat Lunak ITS Mandala.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Q1 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                            <span class="font-bold text-slate-900 text-sm sm:text-base">1. Bagaimana nilai-nilai Pancasila dapat menjadi pedoman bagi pengembang perangkat lunak?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content hidden px-6 py-4 bg-white text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200">
+                            Pancasila menjadi *moral compass* (kompas etika) bagi software engineer. Sila ke-1 membimbing integritas dan kejujuran kode; Sila ke-2 mendorong keadilan tanpa diskriminasi algoritma; Sila ke-3 menjaga keamanan siber nasional; Sila ke-4 menekankan keterbukaan dan konsensus; serta Sila ke-5 memastikan inklusivitas dan aksesibilitas aplikasi bagi seluruh lapisan masyarakat.
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                            <span class="font-bold text-slate-900 text-sm sm:text-base">2. Apa hubungan antara nilai Kemanusiaan yang Adil dan Beradab dengan perlindungan data pribadi?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content hidden px-6 py-4 bg-white text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200">
+                            Sila ke-2 menegaskan penghormatan terhadap martabat manusia. Data pribadi adalah manifestasi hak privasi manusia modern. Membocorkan, menjual, atau mengeksploitasi data pengguna tanpa izin adalah tindakan melanggar kemanusiaan yang beradab. Pengembang wajib merancang enkripsi dan proteksi data demi memuliakan pengguna.
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                            <span class="font-bold text-slate-900 text-sm sm:text-base">3. Bagaimana pengembang perangkat lunak dapat mencegah penyalahgunaan teknologi?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content hidden px-6 py-4 bg-white text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200">
+                            Pengembang dapat mencegahnya melalui pendekatan *Security & Ethics by Design*, yakni menyematkan mekanisme validasi input yang ketat, audit algoritma AI secara berkala agar tidak merugikan pengguna, pembuatan fitur moderasi konten hoaks, serta mematuhi etika lisensi lisensi kode terbuka.
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                            <span class="font-bold text-slate-900 text-sm sm:text-base">4. Mengapa etika dan tanggung jawab sosial penting dalam pengembangan aplikasi digital?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content hidden px-6 py-4 bg-white text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200">
+                            Sistem digital memiliki daya jangkau ekosistem masif. Kesalahan logika atau bias etika kecil dalam kode dapat berdampak negatif pada jutaan orang (misal: kebocoran finansial atau adiksi). Tanggung jawab sosial menjamin bahwa produk teknologi diciptakan untuk kemaslahatan publik, bukan destruksi sosial.
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <button class="accordion-btn w-full px-6 py-4 text-left bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                            <span class="font-bold text-slate-900 text-sm sm:text-base">5. Bagaimana website ini membantu masyarakat memahami nilai-nilai Pancasila?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content hidden px-6 py-4 bg-white text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200">
+                            Website ini menyajikan konsep ideologi secara interaktif, kontekstual, dan relevan dengan tren masa kini. Dengan menghubungkan teori Pancasila langsung ke contoh kasus nyata seperti AI, kejahatan siber, dan privasi data, masyarakat dan mahasiswa RPL lebih mudah mencerna penerapan Pancasila dalam era digital.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. REFERENSI -->
+        <section id="referensi" class="py-16 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-red-600">Daftar Pustaka</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-1">Sumber Referensi Tepercaya</p>
+                    <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm max-w-4xl mx-auto">
+                    <ul class="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700 space-y-3">
+                        <li class="pt-3 flex items-start space-x-3">
+                            <i class="fa-solid fa-book text-red-600 mt-1"></i>
+                            <div>
+                                <strong>Badan Pembinaan Ideologi Pancasila (BPIP).</strong> (2020). <em>Pancasila dalam Arus Sejarah dan Pemikiran Era Digital</em>. Jakarta: BPIP RI.
+                            </div>
+                        </li>
+                        <li class="pt-3 flex items-start space-x-3">
+                            <i class="fa-solid fa-gavel text-amber-600 mt-1"></i>
+                            <div>
+                                <strong>Undang-Undang Republik Indonesia No. 27 Tahun 2022</strong> tentang <em>Perlindungan Data Pribadi (UU PDP)</em>. Lembaran Negara RI.
+                            </div>
+                        </li>
+                        <li class="pt-3 flex items-start space-x-3">
+                            <i class="fa-solid fa-file-lines text-blue-600 mt-1"></i>
+                            <div>
+                                <strong>Kementerian Komunikasi dan Informatika RI.</strong> (2023). <em>Panduan Etika Kecerdasan Buatan (AI) bagi Pengembang Perangkat Lunak</em>. Kominfo.
+                            </div>
+                        </li>
+                        <li class="pt-3 flex items-start space-x-3">
+                            <i class="fa-solid fa-graduation-cap text-emerald-600 mt-1"></i>
+                            <div>
+                                <strong>Tim Dosen Pengampu Pancasila.</strong> (2026). <em>Panduan Tugas UTS Pancasila Prodi Rekayasa Perangkat Lunak</em>. Institut Teknologi dan Sains Mandala Jember.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER HAK CIPTAS & INFORMASI KAMPUS -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div role="img" aria-label="Logo ITS Mandala" class="h-10 w-10 shrink-0 rounded-full border-2 border-amber-400 bg-white text-red-700 flex items-center justify-center">
+                            <i class="fa-solid fa-building-columns text-base" aria-hidden="true"></i>
+                        </div>
+                        <span class="font-bold text-white text-base">ITS MANDALA</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed">
+                        Institut Teknologi dan Sains Mandala<br>
+                        Program Studi Rekayasa Perangkat Lunak (RPL)<br>
+                        Tugas Ujian Tengah Semester (UTS) Ganjil TA 2025/2026
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3">Dosen Pengampu</h4>
+                    <p class="text-slate-300">Umi Lailatul Zahro Syai'un, M.Pd.</p>
+                    <p class="text-slate-400 mt-1">Mata Ujian: Pancasila</p>
+                    <p class="text-slate-400">Kelas: 5RA / 5RB</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-3">Etika & Lisensi</h4>
+                    <p class="text-slate-400 leading-relaxed">
+                        Website statis ini dikembangkan khusus untuk kepentingan edukasi dan pemenuhan tugas akademis sesuai ketentuan hak cipta dan etika digital pengembang.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 text-center text-slate-400">
+                <p>&copy; 2026 Proyek UTS RPL - Institut Teknologi dan Sains Mandala Jember. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        // 1. Navigation Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // 2. Accordion Refleksi UTS
+        const accordionBtns = document.querySelectorAll('.accordion-btn');
+
+        accordionBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // 3. Kuis Interaktif Pancasila
+        const quizData = [
+            {
+                question: "Manakah tindakan pengembang software yang paling mencerminkan penerapan Sila ke-2 (Kemanusiaan yang Adil dan Beradab)?",
+                options: [
+                    "Mengumpulkan semua data pengguna tanpa izin untuk dijual ke pihak ketiga",
+                    "Menjaga kerahasiaan & keamanan data pribadi pengguna dengan enkripsi ketat",
+                    "Membuat bot otomatis untuk menyebarkan komentar promosi berantai",
+                    "Mengabaikan aksesibilitas aplikasi bagi pengguna disabilitas"
+                ],
+                correct: 1
+            },
+            {
+                question: "Konsep 'Gotong Royong' dalam dunia rekayasa perangkat lunak modern tercermin dalam praktik...",
+                options: [
+                    "Penyebaran malware massal",
+                    "Pengembangan proyek Open Source dan kolaborasi ilmu pengetahuan",
+                    "Monopoli kode program secara tertutup",
+                    "Plagiarisme kode karya orang lain"
+                ],
+                correct: 1
+            },
+            {
+                question: "Mengapa teknologi AI generatif harus dipagari oleh nilai-nilai Pancasila?",
+                options: [
+                    "Agar AI bisa digunakan untuk membuat hoaks lebih cepat",
+                    "Agar pengembangan AI tidak memicu diskriminasi, kebohongan, dan perpecahan sosial",
+                    "Agar AI tidak memerlukan koneksi internet",
+                    "Agar harga komputer menjadi lebih murah"
+                ],
+                correct: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const q = quizData[currentQuestion];
+            document.getElementById('quiz-progress').innerText = `Pertanyaan ${currentQuestion + 1} dari ${quizData.length}`;
+            document.getElementById('quiz-question').innerText = q.question;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "quiz-opt-btn w-full text-left p-3 rounded-lg bg-slate-700/60 hover:bg-slate-700 border border-slate-600 text-xs sm:text-sm text-slate-200 transition";
+                btn.innerText = opt;
+                btn.onclick = () => selectOption(idx);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function selectOption(index) {
+            if (index === quizData[currentQuestion].correct) {
+                score += 10;
+            }
+            
+            document.getElementById('quiz-score-badge').innerText = `Skor: ${score}`;
+            currentQuestion++;
+
+            if (currentQuestion < quizData.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-body').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            document.getElementById('quiz-final-score').innerText = `Anda berhasil meraih skor ${score} dari total ${quizData.length * 10} poin.`;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-score-badge').innerText = `Skor: 0`;
+            document.getElementById('quiz-body').classList.remove('hidden');
+            document.getElementById('quiz-result').classList.add('hidden');
+            loadQuestion();
+        }
+
+        // Initialize quiz on load
+        loadQuestion();
+    </script>
+</body>
+</html>
